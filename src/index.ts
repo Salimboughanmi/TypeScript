@@ -31,15 +31,24 @@ console.log(typeof addd(70,30)) */
 
 /* *********************Type Annotations With Arrays**************** */
 
-let all : (string |number |boolean )="oussema"
+/* let all : (string |number |boolean )="oussema"
 
 all = "a";
 all = 40;
 all = true
 
-let myFriends = [
-    "salim" , "salim" , 'sami' , "houssem" 
+let myFriends : string[]= [
+    "salim" , "salim" , 'sami' , "houssem" ,// on ne peut pas ajouter un autre var sauf string
 ]
 for (let i =0 ; i <myFriends.length ; i++){
-  console.log(myFriends[i])
+  console.log(myFriends[i].repeat(3))
 }
+ */
+
+/* *********************Type Annotations With  Multidimensional Arrays  **************** */
+
+let arrayOne : number[]= [1,2,3,4,5,6];
+let arrayTwo : string[]= ['1','2','3','4','5','6'];
+let arrayThree : ( number | string)[]= ['a','b',1,2,3,4,5,6];
+
+let arrayFour : (string | number | string[] | boolean[])[]= [1,2,3,4,5,6,'z', ['a','b'] , [true]] ;
