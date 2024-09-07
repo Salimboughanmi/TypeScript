@@ -1,3 +1,5 @@
+/* ******************************Type Annotations With Function */
+
 /* 
 Type annotations with fct
 --noImplicitAny : 
@@ -10,7 +12,7 @@ Type annotations with fct
 */
 
 
-let showMsg = true ; 
+/* let showMsg = true ; 
 
 function showdetails(name: string , age: number , salary: number) :string { // outpout annotation : fct must return string ,  return num : false
     let x = 30 ; 
@@ -19,4 +21,12 @@ function showdetails(name: string , age: number , salary: number) :string { // o
     }
     return 'No data to return' // return lors "noImplicitReturns": true,
 }
-console.log(showdetails('salim' , 10 ,10 ))
+console.log(showdetails('salim' , 10 ,10 )) */
+
+/* ********************************************** Function Optional and Default Parameters */
+
+function showData(name:string ="un" , age: number , country?: string ) {
+    return `${name} - ${age} - ${country}`
+}
+//console.log(showData("osama" , 40 )) faux !! expected 3 argument !! donc ajouter un default value en parametre expl country: string ='un' ou country?: string : optional
+console.log(showData("osama" , 40 ))
