@@ -25,8 +25,30 @@ console.log(showdetails('salim' , 10 ,10 )) */
 
 /* ********************************************** Function Optional and Default Parameters */
 
-function showData(name:string ="un" , age: number , country?: string ) {
+/* function showData(name:string ="un" , age: number , country?: string ) {
     return `${name} - ${age} - ${country}`
 }
 //console.log(showData("osama" , 40 )) faux !! expected 3 argument !! donc ajouter un default value en parametre expl country: string ='un' ou country?: string : optional
-console.log(showData("osama" , 40 ))
+console.log(showData("osama" , 40 , )) */
+
+/* ********************************************** Function Rest Parameter */
+
+function addAll(...num :number[]){
+  let result =0;
+  for (let i =0 ; i< num.length ; i++){
+    result += num[i] ;
+  }
+  return result ; 
+}
+console.log(addAll(56,64,12,385,1))
+/*   ********   Type Annotations With Anonymous And Arrow Function   ****************/
+
+const add = function(a: number , b : number) : number{
+return a + b ;
+}
+console.log(add(8,5))
+
+const addArrow = (num1 : number , num2 : number ) :number => num1 +num2
+console.log(addArrow(87,5))
+
+      
