@@ -186,7 +186,7 @@ console.log((data as string).repeat(3)); */
 
 // let all: number | string = 100;
 
-type A = {
+/* type A = {
   one: string,
   two: number,
   three: boolean
@@ -209,7 +209,7 @@ function getActions(btns: mix) {
   console.log(`Hello ${btns.five}`);
 }
 
-getActions({ one: "String", two: 100, three: true, five: true });
+getActions({ one: "String", two: 100, three: true, five: true }); */
 
 
 /*
