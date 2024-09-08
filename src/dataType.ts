@@ -162,11 +162,11 @@ if (lvl === "Easy") {
 */
 
 // let myImg = document.getElementById("my-img") as HTMLImageElement;
-let myImg = <HTMLImageElement> document.getElementById("my-img");
+/* let myImg = <HTMLImageElement> document.getElementById("my-img");
 console.log(myImg.src);
 
 let data: any = 1000;
-console.log((data as string).repeat(3));
+console.log((data as string).repeat(3)); */
 
 
 /* ========================================================- Data Types - Union And Intersection Types */
@@ -210,3 +210,35 @@ function getActions(btns: mix) {
 }
 
 getActions({ one: "String", two: 100, three: true, five: true });
+
+
+/*
+ ******************************************************* Type Annotations With Object
+*/
+
+let myObject: {
+  readonly username: string,
+  id: number,
+  hire?: boolean,
+  skills: {
+    one: string,
+    two: string
+  }
+} = {
+  username: "Elzero",
+  id: 100,
+  hire: true,
+  skills: {
+    one: "HTML",
+    two: "CSS"
+  }
+};
+
+// myObject.username = "Osama";
+myObject.id = 101;
+myObject.hire = false;
+
+console.log(myObject.username);
+console.log(myObject.id);
+console.log(myObject.hire);
+console.log(myObject.skills.one);
