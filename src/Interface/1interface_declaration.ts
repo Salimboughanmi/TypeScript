@@ -11,8 +11,8 @@
 */
 
 interface User {
-  id : number , 
-  username : string , 
+  id? : number ,  // optional 
+ readonly username : string , 
   country : string 
 }
 
@@ -21,6 +21,7 @@ let user : User ={
   username : "salim",
   id :7
 }
+//user.username = "jjjjj" ; faut puisq read only
 console.log(user)
 
 function getData(data : User) {
