@@ -19,7 +19,7 @@ interface settings {
   external: boolean;
 }
 
-let usersettings: Settings = {
+let usersettings: settings = {
   theme: true,
   font: "Open Sans",
   sidebar: false,
