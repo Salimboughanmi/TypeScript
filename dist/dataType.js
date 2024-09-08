@@ -109,19 +109,26 @@ alwaysLog("Osama");
   --- Theres A String-Based Enums
   --- Theres Heterogeneous Enums [String + Number]
 */
-/* const KIDS = 15;
+/* const KIDS = 15;   //before without enum
 const EASY = 9;
 const MEDIUM = 6;
 const HARD = 3; */
+var Kids;
+(function (Kids) {
+    Kids[Kids["three"] = 5] = "three";
+    Kids[Kids["Five"] = 9] = "Five";
+    Kids[Kids["ten"] = 6] = "ten";
+})(Kids || (Kids = {}));
 var Level;
 (function (Level) {
-    Level[Level["Kids"] = 15] = "Kids";
+    Level[Level["kid"] = 5] = "kid";
     Level[Level["Easy"] = 9] = "Easy";
     Level[Level["Medium"] = 6] = "Medium";
-    Level[Level["Hard"] = 3] = "Hard";
+    Level[Level["hard"] = 3] = "hard";
 })(Level || (Level = {}));
 let lvl = "Easy";
 if (lvl === "Easy") {
-    console.log(`The Level Is ${lvl} And Number Of Seconds Is ${Level.Easy}`);
+    console.log(`The Level Is ${lvl} And Number Of Seconds Is ${Level.Easy}`); //9
+    console.log(`The Level Is ${lvl} And Number Of Seconds Is ${Level.kid}`); //5
 }
 //# sourceMappingURL=dataType.js.map
