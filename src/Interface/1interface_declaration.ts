@@ -10,7 +10,7 @@
   --- Use Read Only And Optional Operator
 */
 
-interface User {
+/* interface User {
   id? : number ,  // optional 
  readonly username : string , 
   country : string 
@@ -29,4 +29,4 @@ function getData(data : User) {
 }
 
 getData({id : 10 , username : "semah" , country : 'egypt'})
-getData({ id :300 ,country :'krib' , username :"fedi"})
+getData({ id :300 ,country :'krib' , username :"fedi"}) */
