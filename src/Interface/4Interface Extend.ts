@@ -3,7 +3,7 @@
   - Extending Interfaces
 */
 
-interface Myuser {
+/* interface Myuser {
   id : number ,
   username : string , 
   country : string ,
@@ -23,7 +23,7 @@ username : "chrif",
 country : 'KSA'
 }
 
-let userOne : Admin ={
+let userOnee : Admin ={
 id : 4070 , 
 country : 'alg',
 protected : true , 
@@ -32,4 +32,4 @@ role :1
 }
 
 console.log(person)
-console.log(userOne)
+console.log(userOnee) */
